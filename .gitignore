@@ -1,0 +1,7 @@
+# Files for git to ignore
+
+#Ignore emacs backup files
+*~
+
+#Ignore any object or archive files
+*.[oa]

@@ -1,0 +1,17 @@
+=====> Time:  Wed Mar 25 13:05:35 2015       <=====
+=====> Log from file  removecolumns.py  <===== 
+
+Overview of the dataframe: 
+MultiIndex: 227 entries, (AALBERTS INDUSTRIES, Industrial Engineering) to (ZODIAC AEROSPACE, Aerospace & Defense)
+No. of Columns with more that 44 missing values:  10 
+Deleted columns:
+('AIRBUS GROUP', 'Aerospace & Defense') 
+('ANHEUSER-BUSCH INBEV', 'Beverages') 
+('DEUTSCHE POST (XET)', 'Industrial Transportation') 
+('INFINEON TECHS/ (XET)', 'Technology Hardware & Equipment') 
+('LUXOTTICA', 'Personal Goods') 
+('PADDY POWER', 'Travel & Leisure') 
+('TELEKOM AUSTRIA', 'Fixed Line Telecommunications') 
+("TOD'S", 'Personal Goods') 
+('VEOLIA ENVIRONNEMENT', 'Gas & Water & Multiutilities') 
+('WIRECARD (XET)', 'Support Services') 
