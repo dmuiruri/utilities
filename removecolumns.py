@@ -2,13 +2,14 @@
 
 """
 This module is used to remove the columns(stocks) that contain too
-many null values in a given dataset. View logfile in current directory
-for details on columns that get deleted. A back up of the dataframe
-should be created manually prior to using this module.
+many null values in a given dataset. View the logfile
+(logfile_removecolumns.txt) in current directory for details on
+columns that get deleted. A back up of the dataframe should be created
+manually prior to using this module.
 """
 
 __author__      = "Dennis Muiruri"
-__copyright__   = "03/2015"
+__copyright__   = "03/2014"
 __email__       = "denonjugush@gmail.com"
 
 import numpy as np

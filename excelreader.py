@@ -3,7 +3,10 @@
 """
 This file implements a reader that reads the various sheets of an
 excel file and combining the data into one dataframe. This is assumes
-that the data follows the same structure across the various sheets.
+that the data follows the same structure across the various sheets i.e
+the column names and number of columns are the same across all sheets
+to be merged. The script produces a log file(log.txt) that indicates
+the sheets that have been copied.
 
 NOTE: A potential bug in the date parsing. When the dates values are
 seperated by the dot (.), joining of the dataframe does not work
@@ -11,7 +14,7 @@ well. The back slash seperator (/)seems to works fine.
 """
 
 __author__      = "Dennis Muiruri"
-__copyright__   = "03/2015"
+__copyright__   = "03/2014"
 __email__       = "denonjugush@gmail.com"
 
 
@@ -59,13 +62,13 @@ def read_excel_sheets(filename):
 
 """
 Some kind of bug/glitch has been noted. When I want to copy all the
-sheets, i.e 80, the data gets corrupt when we get to sheet number
-33. I.e the sheets 0-32 are all correctly added into one data frame
-but when we get to number 33 the data gets corrupted, i,e some
-spurious entries are noted. Weirdly though from sheet 33-80 everything
-proceeds as expected so the high number of colums is not the
-problem. On further investigation of the code, the problem appears to
-be at the join function, since if I take the sheets 0-32 into one
+sheets, 80 of them in this case, the data gets corrupt when we get to
+sheet number 33. I.e the sheets 0-32 are all correctly added into one
+data frame but when we get to number 33 the data gets corrupted, i,e
+some spurious entries are noted. Weirdly though from sheet 33-80
+everything proceeds as expected so the high number of colums is not
+the problem. On further investigation of the code, the problem appears
+to be at the join function, since if I take the sheets 0-32 into one
 frame and sheets 33-80 into another frame, if I use the function join
 to merge the dataframe into one data frame it gets corrupted, however
 when I use the pd.concat function, the dataset is merged
